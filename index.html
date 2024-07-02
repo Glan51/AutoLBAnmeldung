@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stundenplan</title>
+    <style>
+      body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 100vh;
+          margin: 0;
+      }
+      #centeredContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #myForm {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+        }
+
+      form {
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .ui.medium.header {
+          color: #333;
+      }
+
+      input[type="radio"] {
+          margin-right: 5px;
+          cursor: pointer;
+      }
+
+      label[class="loadFile"] {
+          background-color: #007bff;
+          color: #fff;
+          text-align: center;
+          border-radius: 5px;
+          padding: 10px 0px;
+          cursor: pointer;
+      }
+      label[class="loadFile"]:hover {
+          background-color: #0056b3;
+      }
+
+      button[type="button"] {
+          background-color: #4CAF50;
+          font-size: medium;
+          color: #fff;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+      }
+
+      button[type="button"]:hover {
+          background-color: #45a049;
+      }
+
+      p {
+          margin-top: 20px;
+          color: black;
+      }
+
+  </style>
+  </head>
+  <body>
+    <form id="anmeldung">
+      <div class="content active">
+        <div class="ui stackable five column grid transition visible" style="display: flex !important;">
+
+          <div class="column">
+            <div class="ui medium header">Montag, xx.xx.</div>
+            <br>
+            <div style="margin-bottom: 1.67rem;">
+              <fieldset>
+                  <hxx class="ui top attached header">1-2: LB AB</hxx>
+                <div class="ui attached segment">
+                  <input type="radio" id="MoE1" name="slot-Mo1-2" tabindex="xx" class="01" value="xxxx">
+                  <label class="01" for="MoE1">Englisch (H1132LB) <br> <i>SULT xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoNaWi" name="slot-Mo1-2" tabindex="xx" class="02" value="xxxx">
+                  <label class="02" for="MoNaWi">Naturwissenschaften (H736) <br> <i>STOW xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoAM" name="slot-Mo1-2" tabindex="xx" class="03" value="xxxx">
+                  <label class="03" for="MoAM">Mathematik (H931) <br> <i>SINL xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoD1" name="slot-Mo1-2" tabindex="xx" class="04" value="xxxx">
+                  <label class="04" for="MoD1">Deutsch (H1133LB) <br> <i>BUIJ xx/xx</i></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div style="margin-bottom: 1.67rem;">
+              <fieldset>
+                <hxx class="ui top attached header">6-7: LB FB I</hxx>
+                <div class="ui attached segment">
+                  <input type="radio" id="MoSEW-LEHE67" name="slot-Mo6-7" tabindex="xx" class="05" value="xxxx">
+                  <label class="05" for="MoSEW-LEHE67">Softwareentwicklung (H1133LB) <br> <i>LEHE xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoSEW-LISE067" name="slot-Mo6-7" tabindex="xx" class="06" value="xxxx">
+                  <label class="06" for="MoSEW-LISE067">Softwareentwicklung (H931) <br> <i>LISE0 xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoMEDT67" name="slot-Mo6-7" tabindex="xx" class="07" value="xxxx">
+                  <label class="07" for="MoMEDT67">Medientechnik (H1132LB) <br> <i>TRED xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoSYT67" name="slot-Mo6-7" tabindex="xx" class="08" value="xxxx">
+                  <label class="08" for="MoSYT67">Systemtechnik (H127) <br> <i>KOPG xx/xx</i></label>
+                  <br>
+                </div>
+              </fieldset>
+            </div>
+
+            <div style="margin-bottom: 1.67rem;">
+              <fieldset>
+                <hxx class="ui top attached header">8-9: LB FB II</hxx>
+                <div class="ui attached segment">
+                  <input type="radio" id="MoSEW-LEHE89" name="slot-Mo8-9" tabindex="xx" class="09" value="xxxx">
+                  <label class="09" for="MoSEW-LEHE89">Softwareentwicklung (H1133LB) <br> <i>LEHE xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoSEW-LISE089" name="slot-Mo8-9" tabindex="xx" class="10" value="xxxx">
+                  <label class="10" for="MoSEW-LISE089">Softwareentwicklung (H931) <br> <i>LISE0 xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoMEDT89" name="slot-Mo8-9" tabindex="xx" class="11" value="xxxx">
+                  <label class="11" for="MoMEDT89">Medientechnik (H1132LB) <br> <i>TRED xx/xx</i></label>
+                  <br>
+                  <input type="radio" id="MoSYT89" name="slot-Mo8-9" tabindex="xx" class="12" value="xxxx">
+                  <label class="12" for="MoSYT89">Systemtechnik (H127) <br> <i>KOPG xx/xx</i></label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui medium header">Dienstag, xx.xx.</div>
+            <br>
+            <div class="column">
+              <div style="margin-bottom: 1.67rem;">
+                <fieldset>
+                  <hxx class="ui top attached header">1-2: LB AB</hxx>
+                  <div class="ui attached segment">
+                    <input type="radio" id="DiE1" name="slot-Di1-2" tabindex="xx" class="13" value="xxxx">
+                    <label class="13" for="DiE1">Englisch (H1132LB) <br> <i>WEHS xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiNaWi" name="slot-Di1-2" tabindex="xx" class="14" value="xxxx">
+                    <label class="14" for="DiNaWi">Naturwissenschaften (H736) <br> <i>STOW xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiAM" name="slot-Di1-2" tabindex="xx" class="15" value="xxxx">
+                    <label class="15" for="DiAM">Mathematik (H931) <br> <i>NORH xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiD1" name="slot-Di1-2" tabindex="xx" class="16" value="xxxx">
+                    <label class="16" for="DiD1">Deutsch (H1133LB) <br> <i>BUIJ xx/xx</i></label>
+
+                  </div>
+                </fieldset>
+              </div>
+
+              <div style="margin-bottom: 1.67rem;">
+                <fieldset>
+                  <hxx class="ui top attached header">6-7: LB FB I</hxx>
+                  <div class="ui attached segment">
+                    <input type="radio" id="DiSEW-LEHE67" name="slot-Di6-7" tabindex="xx" class="17" value="xxxx">
+                    <label class="17" for="DiSEW-LEHE67">Softwareentwicklung (H1133LB) <br> <i>LEHE xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiSEW-SHRS67" name="slot-Di6-7" tabindex="xx" class="18" value="xxxx">
+                    <label class="18" for="DiSEW-SHRS67">Softwareentwicklung (H931) <br> <i>SHRS xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiMEDT67" name="slot-Di6-7" tabindex="xx" class="19" value="xxxx">
+                    <label class="9" for="DiMEDT67">Medientechnik (H1132LB) <br> <i>PAWD xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiSYT67" name="slot-Di6-7" tabindex="xx" class="20" value="xxxx">
+                    <label class="20" for="DiSYT67">Systemtechnik (H927LB) <br> <i>KOLK xx/xx</i></label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div style="margin-bottom: 1.67rem;">
+                <fieldset>
+                  <hxx class="ui top attached header">8-9: LB FB II</hxx>
+                  <div class="ui attached segment">
+                    <input type="radio" id="DiSEW-LEHE89" name="slot-Di8-9" tabindex="xx" class="21" value="xxxx">
+                    <label class="21" for="DiSEW-LEHE89">Softwareentwicklung (H1133LB) <br> <i>LEHE xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiSEW-SHRS89" name="slot-Di8-9" tabindex="xx" class="22" value="xxxx">
+                    <label class="22" for="DiSEW-SHRS89">Softwareentwicklung (H931) <br> <i>SHRS xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiMEDT89" name="slot-Di8-9" tabindex="xx" class="23" value="xxxx">
+                    <label class="23" for="DiMEDT89">Medientechnik (H1132LB) <br> <i>PAWD xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DiSYT89" name="slot-Di8-9" tabindex="xx" class="24" value="xxxx">
+                    <label class="24" for="DiSYT89">Systemtechnik (H927LB) <br> <i>KOLK xx/xx</i></label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui medium header">&nbsp;&nbsp;&nbsp;&nbsp;Mittwoch, xx.xx. &nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="column">
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui medium header">Donnerstag, xx.xx.</div>
+            <br>
+            <div class="column">
+              <div style="margin-bottom: 1.67rem;">
+                <fieldset>
+                  <hxx class="ui top attached header">1-2: LB AB</hxx>
+                  <div class="ui attached segment">
+                    <input type="radio" id="DoE1" name="slot-Do1-2" tabindex="xx" class="25" value="xxxx">
+                    <label class="25" for="DoE1">Englisch (H1132LB) <br> <i>WEHS xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DoNaWi" name="slot-Do1-2" tabindex="xx" class="26" value="xxxx">
+                    <label class="26" for="DoNaWi">Naturwissenschaften (H736) <br> <i>FRIN xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DoAM" name="slot-Do1-2" tabindex="xx" class="27" value="xxxx">
+                    <label class="27" for="DoAM">Mathematik (H931) <br> <i>SINL xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="DoD1" name="slot-Do1-2" tabindex="xx" class="28" value="xxxx">
+                    <label class="28" for="DoD1">Deutsch (H1133LB) <br> <i>BUIJ xx/xx</i></label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui medium header">Freitag, xx.xx.</div>
+            <br>
+            <div class="column">
+              <div style="margin-bottom: 1.67rem;">
+                <fieldset>
+                  <hxx class="ui top attached header">1-2: LB AB</hxx>
+                  <div class="ui attached segment">
+                    <input type="radio" id="FrE1" name="slot-Fr1-2" tabindex="xx" class="29" value="xxxx">
+                    <label class="29" for="FrE1">Englisch (H1132LB) <br> <i>SULT xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="FrNaWi" name="slot-Fr1-2" tabindex="xx" class="30" value="xxxx">
+                    <label class="30" for="FrNaWi">Naturwissenschaften (H736) <br> <i>FRIN xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="FrAM" name="slot-Fr1-2" tabindex="xx" class="31" value="xxxx">
+                    <label class="31" for="FrAM">Mathematik (H931) <br> <i>NORH xx/xx</i></label>
+                    <br>
+                    <input type="radio" id="FrD1" name="slot-Fr1-2" tabindex="xx" class="32" value="xxxx">
+                    <label class="32" for="FrD1">Deutsch (H1133LB) <br> <i>BUIJ xx/xx</i></label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: auto; margin-bottom: 70px;">KW <input id="kwInput" placeholder="1-52" size="1" maxlength="2" onkeydown="return /[0-9]/i.test(event.key)">: Montag, xx.x. - Sonntag, xx.x.</p>
+      </div>
+      <div id="centeredContent" style="display: flex; flex-direction: column; align-items: center;">
+        <button type="button" style="width: 65% !important;" onclick="saveData()">Daten senden</button>
+        <label for="loadFile" style="width: 60% !important;" class="loadFile">Datei auswählen</label>
+        <input type="file" style="visibility:hidden" id="loadFile" accept=".txt" onchange="loadData()">
+      </div>
+    </form>
+  </body>
+
+    <script>
+      function saveData() {
+          var radioButtons = document.querySelectorAll('input[type="radio"]');
+          var radioData = {};
+
+          radioButtons.forEach(function (radioButton) {
+              var id = radioButton.id;
+              var status = radioButton.checked ? 'true' : 'false';
+              radioData[id] = status;
+          });
+
+          var kwInputValue = document.getElementById('kwInput').value.trim();
+
+          // Daten kombinieren
+          var data = {
+              radioData: radioData,
+              kwText: 'KW ' + kwInputValue + ':'
+          };
+
+          // Daten in Textdatei speichern
+          var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'text/plain' });
+
+          // Direkt herunterladen
+          var a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = 'form_data.txt';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+      }
+
+      function loadData() {
+          var input = document.getElementById('loadFile');
+          var file = input.files[0];
+
+          if (file) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                  // Parse the JSON data from the file
+                  var savedData = JSON.parse(e.target.result);
+
+                  // Apply the saved data to the form
+                  for (var id in savedData.radioData) {
+                      var radioButton = document.getElementById(id);
+                      if (radioButton) {
+                          radioButton.checked = savedData.radioData[id] === 'true';
+                      }
+                  }
+
+                  // Set the value of the KW text input
+                  var kwInputValue = savedData.kwText.split(':')[0].replace('KW ', ''); // Entfernen von 'KW ' und ':' aus dem Wert, um nur die Zahl zu erhalten
+                  document.getElementById('kwInput').value = kwInputValue;
+
+                  alert('Wenn du etwas ändern möchtest, musst du, nach dem Hochladen, die alte Version löschen und danach darfst du das Neue herunterladen.');
+              };
+
+              // Read the file as text
+              reader.readAsText(file);
+          }
+      }
+  </script>
+
+  </body>
+</html>
