@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programm-Download</title>
+    <script>
+        window.onload = function() {
+            // URL der Datei, die heruntergeladen werden soll
+            var fileUrl = 'Test.txt';
+
+            // Erstellen eines unsichtbaren Links
+            var link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = 'Test.txt'; // optional: Dateiname, der beim Download verwendet wird
+            link.style.display = 'none';
+
+            // Fügen Sie den Link zum DOM hinzu
+            document.body.appendChild(link);
+
+            // Klicken Sie auf den Link, um den Download zu starten
+            link.click();
+
+            // Entfernen Sie den Link aus dem DOM
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body>
+    <h1>Programm-Download wird gestartet...</h1>
+</body>
+</html>
